@@ -9,7 +9,7 @@ app.get('/version', (req, res) => {
   res.send('hellooo') // change this string to ensure a new version deployed
 })
 app.get('/feature', (req, res) => {
-  res.send('test update feature') // change this string to ensure a new version deployed
+  res.send('11111111') // change this string to ensure a new version deployed
 })
 app.use(express.static('dist'))
 
