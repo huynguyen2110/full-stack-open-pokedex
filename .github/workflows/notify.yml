@@ -1,11 +1,12 @@
-name: Health Check
+name: Notify
 
 on:
-  schedule:
-    - cron: '0 12 * * *'
+  push:
+    branches:
+      - master
 
 jobs:
-    health-check:
+    notify_job:
       runs-on: ubuntu-20.04
       steps:
         - name: Check the deployed service URL
